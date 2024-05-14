@@ -1,29 +1,20 @@
-<?php
-
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
+class CreateKwitansisTable extends Migration
 {
-    /**
-     * Run the migrations.
-     */
-    public function up(): void
+    public function up()
     {
-        Schema::create('kwitansi', function (Blueprint $table) {
-            $table->id('id_kwitansi');
+        Schema::create('kwitansis', function (Blueprint $table) {
+            $table->id();
             $table->date('tgl_kwitansi');
             $table->timestamps();
         });
     }
 
-
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
+    public function down()
     {
-        Schema::dropIfExists('kwitansi');
+        Schema::dropIfExists('kwitansis');
     }
-};
+}

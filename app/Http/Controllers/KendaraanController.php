@@ -21,7 +21,7 @@ class KendaraanController extends Controller
     public function store(Request $request)
 {
     $request->validate([
-        'no_pol' => 'required|unique:kendaraan',
+        'no_pol' => 'required|unique:kendaraan|max:6',
         'no_mesin' => 'required|unique:kendaraan',
         'jenis_mobil' => 'required|in:mpv,city,suv',
         'nama_mobil' => 'required',

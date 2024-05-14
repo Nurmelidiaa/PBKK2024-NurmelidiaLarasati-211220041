@@ -11,7 +11,6 @@ class Kwitansi extends Model
     protected $table = 'kwitansi';
 
     protected $fillable = [
-        'id_kwitansi',
         'tgl_kwitansi',
     ];
 }

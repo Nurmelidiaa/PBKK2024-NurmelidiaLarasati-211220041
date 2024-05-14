@@ -17,6 +17,31 @@
                             @csrf
                             @method('PUT')
                             <div class="mb-3">
+                                <label for="no_pol" class="form-label">No. Pol</label>
+                                <input type="text" class="form-control" id="no_pol" name="no_pol" value="{{ $kendaraan->no_pol }}">
+                                @error('no_pol')
+                                    <div class="text-danger">{{ $message }}</div>
+                                @enderror
+                            </div>
+                            <div class="mb-3">
+                                <label for="no_mesin" class="form-label">No. Mesin</label>
+                                <input type="text" class="form-control" id="no_mesin" name="no_mesin" value="{{ $kendaraan->no_mesin }}">
+                                @error('no_mesin')
+                                    <div class="text-danger">{{ $message }}</div>
+                                @enderror
+                            </div>
+                            <div class="mb-3">
+                                <label for="jenis_mobil" class="form-label">Jenis Kendaraan</label>
+                                <select class="form-select" id="jenis_mobil" name="jenis_mobil">
+                                    <option value="mpv" {{ $kendaraan->jenis_mobil == 'mpv' ? 'selected' : '' }}>MPV</option>
+                                    <option value="city" {{ $kendaraan->jenis_mobil == 'city' ? 'selected' : '' }}>City</option>
+                                    <option value="suv" {{ $kendaraan->jenis_mobil == 'suv' ? 'selected' : '' }}>SUV</option>
+                                </select>
+                                @error('jenis_mobil')
+                                    <div class="text-danger">{{ $message }}</div>
+                                @enderror
+                            </div>
+                            <div class="mb-3">
                                 <label for="nama_mobil" class="form-label">Nama Mobil</label>
                                 <input type="text" class="form-control" id="nama_mobil" name="nama_mobil" value="{{ $kendaraan->nama_mobil }}">
                                 @error('nama_mobil')
