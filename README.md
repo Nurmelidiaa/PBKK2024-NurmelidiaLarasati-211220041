@@ -6,6 +6,10 @@
 ![alt text](https://github.com/Nurmelidiaa/PBKK2024-NurmelidiaLarasati-211220041/blob/main/gambar%20SS/editSewa.JPG)))
 ![alt text](https://github.com/Nurmelidiaa/PBKK2024-NurmelidiaLarasati-211220041/blob/main/gambar%20SS/detailSewa.JPG))
 
+![alt text](https://github.com/Nurmelidiaa/PBKK2024-NurmelidiaLarasati-211220041/blob/main/gambar%20SS/indexKendaraan.JPG))
+
+
+
 https://github.com/Nurmelidiaa/PBKK2024-NurmelidiaLarasati-211220041/blob/main/gambar%20SS/EditPenyewa.JPG
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
