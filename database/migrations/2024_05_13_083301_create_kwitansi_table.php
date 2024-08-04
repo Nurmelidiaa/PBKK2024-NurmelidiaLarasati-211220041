@@ -1,12 +1,13 @@
+<?php
+
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateKwitansisTable extends Migration
-{
+return new class extends Migration {
     public function up()
     {
-        Schema::create('kwitansis', function (Blueprint $table) {
+        Schema::create('kwitansi', function (Blueprint $table) {
             $table->id();
             $table->date('tgl_kwitansi');
             $table->timestamps();
@@ -15,6 +16,6 @@ class CreateKwitansisTable extends Migration
 
     public function down()
     {
-        Schema::dropIfExists('kwitansis');
+        Schema::dropIfExists('kwitansi');
     }
-}
+};

@@ -1,30 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tambah Kwitansi</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
-    <div class="container mt-5">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">Tambah Kwitansi</div>
-                    <div class="card-body">
-                        <form action="{{ route('kwitansi.store') }}" method="POST">
-                            @csrf
-                            <div class="mb-3">
-                                <label for="tgl_kwitansi" class="form-label">Tanggal Kwitansi</label>
-                                <input type="date" class="form-control" id="tgl_kwitansi" name="tgl_kwitansi">
-                            </div>
-                            <button type="submit" class="btn btn-primary">Simpan</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
+<div class="container">
+    <h1>Tambah Kwitansi</h1>
+
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <strong>Whoops!</strong> Ada masalah dengan input Anda.<br><br>
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
         </div>
-    </div>
+    @endif
+
+    <form action="{{ route('kwitansi.store') }}" method="POST">
+        @csrf
+        <div class="form-group">
+            <label for="tgl_kwitansi">Tanggal Kwitansi:</label>
+            <input type="date" name="tgl_kwitansi" class="form-control" id="tgl_kwitansi" value="{{ old('tgl_kwitansi') }}">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <a href="{{ route('kwitansi.index') }}" class="btn btn-secondary mt-3">Kembali</a>
+</div>
 </body>
 </html>

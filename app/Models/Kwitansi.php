@@ -8,7 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Kwitansi extends Model
 {
     use HasFactory;
+
     protected $table = 'kwitansi';
+
+    protected $primaryKey = 'id';
 
     protected $fillable = [
         'tgl_kwitansi',

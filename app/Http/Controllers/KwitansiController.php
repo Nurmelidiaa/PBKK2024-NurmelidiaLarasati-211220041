@@ -20,8 +20,14 @@ class KwitansiController extends Controller
 
     public function store(Request $request)
     {
+        $request->validate([
+            'tgl_kwitansi' => 'required|date',
+        ]);
+
         Kwitansi::create($request->all());
-        return redirect()->route('kwitansi.index');
+
+        return redirect()->route('kwitansi.index')
+            ->with('success', 'Kwitansi created successfully.');
     }
 
     public function show(Kwitansi $kwitansi)
@@ -36,14 +42,21 @@ class KwitansiController extends Controller
 
     public function update(Request $request, Kwitansi $kwitansi)
     {
+        $request->validate([
+            'tgl_kwitansi' => 'required|date',
+        ]);
+
         $kwitansi->update($request->all());
-        return redirect()->route('kwitansi.index');
+
+        return redirect()->route('kwitansi.index')
+            ->with('success', 'Kwitansi updated successfully.');
     }
 
-    public function destroy($id): RedirectResponse
+    public function destroy(Kwitansi $kwitansi)
     {
-        $kwitansi = Kwitansi::findOrFail($id);
         $kwitansi->delete();
-        return redirect()->route('kwitansi.index')->with(['success' => 'Data Berhasil Dihapus!']);
+
+        return redirect()->route('kwitansi.index')
+            ->with('success', 'Kwitansi deleted successfully.');
     }
 }
