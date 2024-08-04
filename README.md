@@ -7,6 +7,8 @@
 ![alt text](https://github.com/Nurmelidiaa/PBKK2024-NurmelidiaLarasati-211220041/blob/main/gambar%20SS/detailSewa.JPG))
 
 ![alt text](https://github.com/Nurmelidiaa/PBKK2024-NurmelidiaLarasati-211220041/blob/main/gambar%20SS/indexKendaraan.JPG))
+![alt text](https://github.com/Nurmelidiaa/PBKK2024-NurmelidiaLarasati-211220041/blob/main/gambar%20SS/DetailKendaraan.JPG))
+
 
 
 
