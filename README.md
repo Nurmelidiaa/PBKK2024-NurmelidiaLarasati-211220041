@@ -4,6 +4,7 @@
 
 ![alt text](https://github.com/Nurmelidiaa/PBKK2024-NurmelidiaLarasati-211220041/blob/main/gambar%20SS/indexSewa.JPG))
 ![alt text](https://github.com/Nurmelidiaa/PBKK2024-NurmelidiaLarasati-211220041/blob/main/gambar%20SS/editSewa.JPG)))
+![alt text](https://github.com/Nurmelidiaa/PBKK2024-NurmelidiaLarasati-211220041/blob/main/gambar%20SS/detailSewa.JPG))
 
 https://github.com/Nurmelidiaa/PBKK2024-NurmelidiaLarasati-211220041/blob/main/gambar%20SS/EditPenyewa.JPG
 
